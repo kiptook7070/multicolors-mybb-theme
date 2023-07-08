@@ -1,0 +1,3781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="Premium Multicolors" version="1830">
+	<properties>
+		<templateset><![CDATA[3]]></templateset>
+		<editortheme><![CDATA[mybb.css]]></editortheme>
+		<imgdir><![CDATA[]]></imgdir>
+		<logo><![CDATA[]]></logo>
+		<tablespace><![CDATA[5]]></tablespace>
+		<borderwidth><![CDATA[0]]></borderwidth>
+		<color><![CDATA[black]]></color>
+		<colors><![CDATA[a:10:{s:5:"black";s:5:"Black";s:4:"calm";s:4:"Calm";s:4:"dawn";s:4:"Dawn";s:5:"earth";s:5:"Earth";s:5:"flame";s:5:"Flame";s:4:"leaf";s:4:"Leaf";s:5:"night";s:5:"Night";s:3:"sun";s:3:"Sun";s:8:"twilight";s:8:"Twilight";s:5:"water";s:5:"Water";}]]></colors>
+		<disporder><![CDATA[a:9:{s:10:"global.css";i:11;s:8:"css3.css";i:12;s:10:"usercp.css";i:13;s:17:"thread_status.css";i:14;s:9:"modcp.css";i:15;s:16:"star_ratings.css";i:16;s:14:"showthread.css";i:17;s:7:"exe.css";i:18;s:14:"responsive.css";i:19;}]]></disporder>
+	</properties>
+	<stylesheets>
+		<stylesheet name="global.css" version="1830"><![CDATA[@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+body {
+    background: #cbd5e17d !important;
+    color: #333;
+    text-align: center;
+    /* line-height: 1.4; */
+    margin: 0;
+    overflow-y: scroll;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+}
+
+a:link {
+	color: #0072BC;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0072BC;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #0072BC;
+	text-decoration: underline;
+}
+
+#container {
+	color: #333;
+	text-align: left;
+	line-height: 1.4;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 13px;
+}
+
+.wrapper {
+	width: 85%;
+	min-width: 970px;
+	max-width: 1500px;
+	margin: auto auto;
+}
+
+#logo {
+	background: #fff;
+	padding: 10px 0;
+	border-bottom: 1px solid #263c30;
+}
+
+
+#header ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#header ul.menu li {
+	margin: 0 7px;
+	display: inline;
+}
+
+#header ul.menu li a {
+	padding-left: 20px;
+	background-image: url(http://st.10tl.net/tema/edward/image18/default/headerlinks_sprite.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+#logo ul.top_links {
+	font-weight: bold;
+	text-align: right;
+	margin: -10px 5px 0 0;
+}
+
+#logo ul.top_links a.search {
+	background-position: 0 0;
+}
+
+#logo ul.top_links a.memberlist {
+	background-position: 0 -20px;
+}
+
+#logo ul.top_links a.calendar {
+	background-position: 0 -40px;
+}
+
+#logo ul.top_links a.help {
+	background-position: 0 -60px;
+}
+
+#logo ul.top_links a.portal {
+	background-position: 0 -180px;
+}
+
+#panel .upper a.logout {
+	font-weight: bold;
+	background: url(http://st.10tl.net/tema/edward/image18/default/headerlinks_sprite.png) right -80px no-repeat;
+	padding-right: 20px;
+	margin-left: 10px;
+}
+
+#panel .upper a.login,
+#panel .upper a.lost_password {
+	background: url(http://st.10tl.net/tema/edward/image18/default/headerlinks_sprite.png) 0 -100px no-repeat;
+	padding-left: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+#panel .upper a.register {
+	background: url(http://st.10tl.net/tema/edward/image18/default/headerlinks_sprite.png) right -80px no-repeat;
+	padding-right: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+#panel .lower ul.panel_links {
+	float: left;
+}
+
+#panel .lower ul.panel_links a.usercp {
+	background-position: 0 -120px;
+}
+
+#panel .lower ul.panel_links a.modcp {
+	background-position: 0 -140px;
+}
+
+#panel .lower ul.panel_links a.admincp {
+	background-position: 0 -160px;
+}
+
+#panel .lower ul.user_links {
+	float: right;
+}
+
+#panel .lower ul.user_links li a {
+	padding: 0;
+	background-image: none;
+}
+
+#panel .upper {
+	background: #0f0f0f url(http://st.10tl.net/tema/edward/image18/default/tcat.png) repeat-x;
+	color: #fff;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #000;
+	padding: 7px;
+	clear: both;
+}
+
+#panel .upper a:link,
+#panel .upper a:visited,
+#panel .upper a:hover,
+#panel .upper a:active {
+	color: #fff;
+}
+
+#panel .lower {
+	background: #efefef;
+	color: #999;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+}
+
+#panel .lower a:link,
+#panel .lower a:visited,
+#panel .lower a:hover,
+#panel .lower a:active {
+	color: #666;
+}
+
+#search {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	float: right;
+	vertical-align: middle;
+}
+
+#search input.button,
+#search input.textbox {
+	border-color: #000;
+}
+
+#search input.button {
+	background: #0066a2 url(http://st.10tl.net/tema/edward/image18/default/thead.png) top left repeat-x;
+	color: #fff;
+}
+
+#search input {
+	margin: -3px 0;
+}
+
+#quick_login .remember_me input {
+	vertical-align: middle;
+	margin: -3px 0 0 5px;
+}
+
+#footer {
+	clear: both;
+}
+
+#footer ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#footer ul.menu li {
+	margin: 0 5px;
+	display: inline;
+}
+
+#footer .upper {
+	background: #efefef;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	padding: 6px;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+#footer a:link,
+#footer a:visited,
+#footer a:hover,
+#footer a:active {
+	color: #777;
+}
+
+#footer .upper .language {
+	float: right;
+	margin: -1px;
+	margin-left: 15px;
+}
+
+#footer .upper .language select {
+	border-color: #ccc;
+}
+
+#footer .upper .theme {
+	float: right;
+	margin: -1px;
+	margin-left: 15px;
+}
+
+#footer .upper .theme select {
+	border-color: #ccc;
+}
+
+#footer .upper ul.bottom_links {
+	float: left;
+	margin: 4px 0 0 0;
+}
+
+#footer .lower {
+	color: #666;
+	padding: 6px 6px 12px 6px;
+	overflow: hidden;
+	font-size: 11px;
+}
+
+#footer .lower a:link,
+#footer .lower a:visited {
+	color: #444;
+	font-weight: bold;
+}
+
+#footer .lower a:hover,
+#footer .lower a:active {
+	color: #333;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#footer .lower #current_time {
+	float: right;
+	color: #888;
+}
+
+#debug {
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+	font-size: 11px;
+}
+
+.scaleimages img {
+	max-width: 100%;
+}
+
+.forum_status {
+height: 25px;
+width: 25px;
+font-size: 30px;
+text-align: center;
+}
+
+.forum_status i {
+display: inline-block;
+line-height: 50px;
+}
+
+.forum_on {
+color: #0094d1;
+}
+
+.forum_off, .forum_offlock, .forum_offlink {
+    color: #333;
+    background: linear-gradient(304deg, #ffffff 0%, #e5eaf0 100%);
+    position: absolute;
+    left: 6px;
+    height: 25px;
+    margin-top: 15px;
+    border-radius: 100%;
+    width: 25px;
+    border: 3px solid #c8ccd1;
+    padding: 0px;
+    border-style: outset;
+    z-index: 2;
+}
+
+.forum_off i {
+opacity: .4;
+}
+
+.forum_offlock i:before {
+content: "\f023";
+}
+
+.forum_offlink i:before {
+content: "\f0c1";
+}
+
+.subforumicon {
+	height: 7px;
+	width: 7px;
+	display: inline-block;
+	margin: 0 5px;
+	cursor: pointer;
+    background: #8f2fe4;
+    border-radius: 100px;
+    border: 4px solid #7a29c3;
+    border-style: double;
+}
+
+.subforum_minion {
+	background-position: 0 0;
+}
+
+.subforum_minioff {
+	background-position: 0 -10px;
+}
+
+.subforum_miniofflock {
+	background-position: 0 -20px;
+}
+
+.subforum_miniofflink {
+	background-position: 0 -30px;
+}
+
+table {
+	color: #333;
+	font-size: 13px;
+}
+
+.tborder {
+    background: #fff;
+    width: 100%;
+    margin: auto auto;
+    border: 1px solid #cacdd1;
+    border-radius: 8px;
+    box-shadow: -3px 5px 0px 0px rgb(151 151 151 / 35%);
+    padding: 10px;
+}
+
+.tfixed {
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+
+
+
+.thead {
+    background: linear-gradient(90deg, #8024d1 0%, #9131e7 100%);
+    color: #ffffff;
+    /* border-bottom: 2px solid #99999900; */
+    padding: 9.5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+.thead a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.thead a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.thead a:hover,
+.thead a:active {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.tcat {
+	background: #0f0f0f url(http://st.10tl.net/tema/edward/image18/default/tcat.png) repeat-x;
+	color: #fff;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #000;
+	padding: 6px;
+	font-size: 12px;
+}
+
+.tcat a:link {
+	color: #fff;
+}
+
+.tcat a:visited {
+	color: #fff;
+}
+
+.tcat a:hover,
+.tcat a:active {
+	color: #fff;
+}
+
+.trow1 {
+    background: #fff;
+    border-color: #fff #ddd #ddd #fff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 15px;
+}
+
+.trow2 {
+	background: #fff;
+	border-color: #fff #ddd #ddd #fff;
+	border-bottom: 1px solid #e5e7eb;
+    padding: 15px;
+}
+
+.trow_shaded {
+	background: #ffdde0;
+	border: 1px solid;
+	border-color: #fff #ffb8be #ffb8be #fff;
+}
+
+.no_bottom_border {
+	border-bottom: 0;
+}
+
+.post.unapproved_post {
+	background: #ffdde0;
+}
+
+.post.unapproved_post .post_author {
+	border-bottom-color: #ffb8be;
+}
+
+.post.classic.unapproved_post .post_author {
+	border-color: #ffb8be;
+}
+
+.post.unapproved_post .post_controls {
+	border-top-color: #ffb8be;
+}
+
+.trow_deleted,
+.post.deleted_post {
+	background: #E8DEFF;
+}
+
+.trow_selected,
+tr.trow_selected td {
+	background: #FFFBD9;
+	color: #333;
+	border-right-color: #F7E86A;
+	border-bottom-color: #F7E86A;
+}
+
+.trow_selected a:link,
+.trow_selected a:visited,
+.trow_selected a:hover,
+.trow_selected a:active {
+	color: #333;
+}
+
+.trow_sep {
+	background: #ddd;
+	color: #333;
+	border-bottom: 1px solid #c5c5c5;
+	padding: 6px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.tfoot {
+	border-top: 1px solid #fff;
+	padding: 6px;
+	background: #ddd;
+	color: #666;
+}
+
+.tfoot a:link {
+	color: #444;
+	text-decoration: none;
+}
+
+.tfoot a:visited {
+	color: #444;
+	text-decoration: none;
+}
+
+.tfoot a:hover,
+.tfoot a:active {
+	color: #444;
+	text-decoration: underline;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #263c30;
+}
+
+.bottommenu {
+	background: #efefef;
+	color: #333;
+	border: 1px solid #4874a3;
+	padding: 10px;
+}
+
+.navigation {
+	color: #333;
+	font-size: 12px;
+}
+
+.navigation a:link {
+	text-decoration: none;
+}
+
+.navigation a:visited {
+	text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:active {
+	text-decoration: underline;
+}
+
+.navigation .active {
+	color: #333;
+	font-size: small;
+	font-weight: bold;
+}
+
+.smalltext {
+	font-size: 11px;
+}
+
+.largetext {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+fieldset {
+	padding: 12px;
+	border: 1px solid #ddd;
+	margin: 0;
+}
+
+fieldset.trow1,
+fieldset.trow2 {
+	border-color: #bbb;
+}
+
+fieldset.align_right {
+	text-align: right;
+}
+
+input.textbox {
+	background: #ffffff;
+	color: #333;
+	border: 1px solid #ccc;
+	padding: 3px;
+	outline: 0;
+	font-size: 13px;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+}
+
+textarea {
+	background: #ffffff;
+	color: #333;
+	border: 1px solid #ccc;
+	padding: 2px;
+	line-height: 1.4;
+	outline: 0;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+}
+
+select {
+	background: #ffffff;
+	padding: 3px;
+	border: 1px solid #ccc;
+	outline: 0;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+}
+
+button,
+input.button {
+	padding: 3px 8px;
+	cursor: pointer;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+	background: #eee url(http://st.10tl.net/tema/edward/image18/default/buttons_bg.png) repeat-x;
+	border: 1px solid #bbb;
+	color: #333;
+	outline: 0;
+}
+
+button:hover,
+input.button:hover {
+	border-color: #aaa;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+form input.error {
+	border: 1px solid #f30;
+	color: #f30;
+	background: #ffffff;
+	padding: 3px;
+	outline: 0;
+	font-size: 13px;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+}
+
+form input.valid {
+	border: 1px solid #0c0;
+	background: #ffffff;
+	padding: 3px;
+	outline: 0;
+	font-size: 13px;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+}
+
+form label.error {
+	color: #f30;
+	margin: 5px;
+	padding: 0px;
+	display: block;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+form #message {
+    width: 500px;
+}
+
+.editor {
+	background: #f1f1f1;
+	border: 1px solid #ccc;
+}
+
+.editor_control_bar {
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.post .editor_control_bar {
+	background: #f5f5f5;
+}
+
+.popup_menu {
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.popup_menu .popup_item {
+	background: #efefef;
+	color: #333;
+}
+
+.popup_menu .popup_item:hover {
+	background: #0072BC;
+	color: #fff;
+}
+
+.trow_reputation_positive {
+	background: #ccffcc;
+}
+
+.trow_reputation_negative {
+	background: #ffcccc;
+}
+
+.reputation_positive {
+	color: green;
+}
+
+.reputation_neutral {
+	color: #444;
+}
+
+.reputation_negative {
+	color: red;
+}
+
+.repbox {
+	font-size:16px;
+	font-weight: bold;
+	padding:5px 7px 5px 7px;
+}
+
+._neutral {
+	background-color:#FAFAFA;
+	color: #999999;
+	border:1px solid #CCCCCC;
+}
+
+._minus {
+	background-color: #FDD2D1;
+	color: #CB0200;
+	border:1px solid #980201;
+}
+
+._plus {
+	background-color:#E8FCDC;
+	color: #008800;
+	border:1px solid #008800;
+}
+
+img {
+	border: none;
+}
+
+img.attachment {
+	border: 1px solid #E9E5D7;
+	padding: 2px;
+}
+
+hr {
+	background-color: #000000;
+	color: #000000;
+	height: 1px;
+	border: 0px;
+}
+
+.clear {
+	clear: both;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.hidden {
+	display: none;
+	float: none;
+	width: 1%;
+}
+
+.hiddenrow {
+	display: none;
+}
+
+.selectall {
+	background: #FFFBD9;
+	border-bottom: 1px solid #F7E86A;
+	color: #333;
+	text-align: center;
+}
+
+.expcolimage {
+    float: right;
+    width: auto;
+    vertical-align: middle;
+    /* margin-top: 3px; */
+    padding: 5px 5px;
+    background: #7a29c3;
+    position: relative;
+    /* float: right; */
+    right: 0px;
+    border-radius: 5px;
+}
+
+.tcat_menu > .expcolimage {
+	margin-top: 0;
+}
+
+blockquote {
+	border: 1px solid #ccc;
+	margin: 0;
+	background: #fff;
+	padding: 10px;
+}
+
+blockquote cite {
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	font-style: normal;
+	display: block;
+	padding-bottom: 3px;
+	margin: 0 0 10px 0;
+}
+
+blockquote cite span {
+	float: right;
+	font-weight: normal;
+	font-size: 12px;
+	color: #666;
+}
+
+blockquote cite span.highlight {
+	float: none;
+	font-weight: bold;
+	padding-bottom: 0;
+}
+
+.codeblock {
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.codeblock .title {
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+	padding-bottom: 3px;
+	margin: 0 0 10px 0;
+}
+
+.codeblock code {
+	overflow: auto;
+	height: auto;
+	max-height: 200px;
+	display: block;
+	font-family: Monaco, Consolas, Courier, monospace;
+	font-size: 13px;
+}
+
+.smilie {
+	vertical-align: middle;
+}
+
+.smilie_pointer {
+	cursor: pointer;
+}
+
+.separator {
+	margin: 5px;
+	padding: 0;
+	height: 0px;
+	font-size: 1px;
+	list-style-type: none;
+}
+
+.popup_menu .popup_item_container {
+	margin: 1px;
+	text-align: left;
+}
+
+.popup_menu .popup_item {
+	display: block;
+	padding: 4px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.popup_menu a.popup_item:hover {
+	text-decoration: none;
+}
+
+.subject_new {
+	font-weight: bold;
+}
+
+.highlight {
+	background: #FFFFCC;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.pm_alert {
+	background: #FFF6BF;
+	border: 1px solid #FFD324;
+	text-align: center;
+	padding: 5px 20px;
+	margin-bottom: 15px;
+	font-size: 11px;
+}
+
+.red_alert {
+	background: #FBE3E4;
+	border: 1px solid #A5161A;
+	color: #A5161A;
+	text-align: center;
+	padding: 5px 20px;
+	margin-bottom: 15px;
+	font-size: 11px;
+	word-wrap: break-word;
+}
+
+.red_alert a:link,
+.red_alert a:visited,
+.red_alert a:hover,
+.red_alert  a:active {
+	color: #A5161A;
+}
+
+.high_warning {
+	color: #CC0000;
+}
+
+.moderate_warning {
+	color: #F3611B;
+}
+
+.low_warning {
+	color: #AE5700;
+}
+
+.online {
+	color: #15A018;
+}
+
+.offline {
+	color: #C7C7C7;
+}
+
+div.error {
+	padding: 5px 10px;
+	border-top: 2px solid #FFD324;
+	border-bottom: 2px solid #FFD324;
+	background: #FFF6BF;
+	font-size: 12px;
+}
+
+div.error p {
+	margin: 0;
+	color: #333;
+	font-weight: normal;
+}
+
+div.error p em {
+	font-style: normal;
+	font-weight: bold;
+	padding-left: 24px;
+	display: block;
+	color: #C00;
+	background: url(http://st.10tl.net/tema/edward/image18/default/error.png) no-repeat 0;
+}
+
+div.error ul {
+	margin-left: 24px;
+}
+
+.pagination {
+	font-size: 11px;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+
+.tfoot .pagination,
+.tcat .pagination {
+	padding-top: 0;
+}
+
+.pagination .pages {
+	font-weight: bold;
+}
+
+.pagination .pagination_current,
+.pagination a {
+	padding: 3px 6px;
+	margin-bottom: 3px;
+}
+
+.pagination a {
+	background: #f5f5f5;
+	border: 1px solid #ccc;
+}
+
+.pagination .pagination_current {
+	background: none;
+	color: #333;
+	border: none;
+	font-weight: bold;
+}
+
+.pagination a:hover {
+	background: #0072BC;
+	color: #fff;
+	border-color: #263c30;
+	text-decoration: none;
+}
+
+.pagination .go_page img {
+	margin-bottom: -4px;
+}
+
+.drop_go_page {
+	background: #f5f5f5;
+	padding: 4px;
+}
+
+.pagination_breadcrumb {
+	background-color: #efefef;
+	border: 1px solid #fff;
+	outline: 1px solid #ccc;
+	padding: 5px;
+	margin-top: 5px;
+	font-weight: normal;
+}
+
+.pagination_breadcrumb_link {
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.thread_legend,
+.thread_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.thread_legend dd {
+	padding-bottom: 4px;
+	margin-right: 15px;
+}
+
+.thread_legend img {
+	margin-right: 4px;
+	vertical-align: bottom;
+}
+
+.forum_legend,
+.forum_legend dt,
+.forum_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.forum_legend dd {
+	float: left;
+	margin-right: 10px;
+	margin-top: 7px;
+}
+
+.forum_legend dt {
+	margin-right: 10px;
+	float: left;
+}
+
+.success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.error_message {
+	color: #C00;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+#posts_container {
+	padding: 0;
+}
+
+.ignored_post {
+	border-top: 3px solid #333;
+	padding: 15px;
+}
+
+.ignored_post .show_ignored_post {
+	margin-top: -15px;
+}
+
+.ignored_post .show_ignored_post a.button span {
+	background-position: 0 -400px;
+}
+
+.post {
+	overflow: hidden;
+}
+
+.post.classic {
+	padding-top: 15px;
+}
+
+.post .post_author {
+	overflow: hidden;
+}
+
+.post.classic .post_author {
+    float: left;
+    width: 14%;
+    margin: 0 1% 15px 0;
+    border-left: 0;
+}
+
+.post .post_author .buddy_status {
+	vertical-align: middle;
+	margin-top: -4px;
+}
+
+.post .post_author div.author_avatar {
+	float: left;
+	margin-right: 3px;
+}
+
+.post.classic .post_author div.author_avatar {
+	float: none;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.post .post_author div.author_avatar img {
+	padding: 5px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+
+.post .post_author div.author_information {
+	float: left;
+	padding: 6px 8px;
+}
+
+.post.classic .post_author div.author_information {
+	float: none;
+	padding: 0;
+	text-align: center;
+}
+
+.post .post_author div.author_statistics {
+	float: right;
+	font-size: 11px;
+	padding: 3px 10px 3px 5px;
+	color: #666;
+	line-height: 1.3;
+}
+
+.post.classic .post_author div.author_statistics {
+	border-top: 1px dotted #ccc;
+	margin: 6px 0 0 0;
+	padding: 6px 6px 3px 6px;
+	float: none;
+}
+
+.post .post_head {
+	font-size: 11px;
+	padding-bottom: 4px;
+	border-bottom: 1px dotted #ddd;
+	margin-bottom: 4px;
+}
+
+.post .post_head span.post_date {
+	color: #666;
+}
+
+.post .post_head span.edited_post {
+	font-size: 10px;
+	color: #999;
+}
+
+.post .post_head span.edited_post a {
+	color: #666;
+}
+
+.post_body {
+	font-size: 14px;
+	padding: 12px 0;
+}
+
+.post.classic .post_content {
+	float: left;
+	width: 75%;
+	padding: 0 1% 5px 1%;
+}
+
+.post_content {
+	padding: 9px 10px 5px 10px;
+}
+
+.post_content .signature {
+	margin-top: 5px;
+	border-top: 1px dotted #ddd;
+	padding: 10px 0 4px 0;
+}
+
+.post .post_meta {
+	margin: 4px 0;
+	font-size: 11px;
+	color: #999;
+}
+
+.post .post_meta a:link,
+.post .post_meta a:visited {
+	color: #777;
+}
+
+.post .post_meta a:hover,
+.post .post_meta a:active {
+	color: #777;
+}
+
+.post_controls {
+	clear: both;
+	background: #f5f5f5;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.postbit_buttons > a:link,
+.postbit_buttons > a:hover,
+.postbit_buttons > a:visited,
+.postbit_buttons > a:active {
+	display: inline-block;
+	padding: 2px 5px;
+	margin: 2px;
+	font-size: 11px;
+	background: #eee url(http://st.10tl.net/tema/edward/image18/default/buttons_bg.png) repeat-x;
+	border: 1px solid #ccc;
+	color: #555;
+}
+
+.postbit_buttons > a:hover {
+	border-color: #bbb;
+}
+
+.postbit_buttons a span {
+	padding-left: 20px;
+	display: inline-block;
+	height: 16px;
+	background-image: url(http://st.10tl.net/tema/edward/image18/default/buttons_sprite.png);
+	background-repeat: no-repeat;
+}
+
+.postbit_buttons a.postbit_find span {
+	background-position: 0 0;
+}
+
+.postbit_buttons a.postbit_reputation_add span {
+	background-position: 0 -20px;
+}
+
+.postbit_buttons a.postbit_email span {
+	background-position: 0 -40px;
+}
+
+.postbit_buttons a.postbit_website span {
+	background-position: 0 -60px;
+}
+
+.postbit_buttons a.postbit_pm span {
+	background-position: 0 -80px;
+}
+
+.postbit_buttons a.postbit_quote span {
+	background-position: 0 -100px;
+}
+
+.postbit_buttons a.postbit_multiquote span {
+	background-position: 0 -120px;
+}
+
+.postbit_buttons a.postbit_multiquote_on span {
+	background-position: 0 -140px;
+}
+
+.postbit_buttons a.postbit_edit span {
+	background-position: 0 -160px;
+}
+
+.postbit_buttons a.postbit_qdelete span {
+	background-position: 0 -180px;
+}
+
+.postbit_buttons a.postbit_qrestore span {
+	background-position: 0 -200px;
+}
+
+.postbit_buttons a.postbit_report span {
+	background-position: 0 -220px;
+}
+
+.postbit_buttons a.postbit_warn span {
+	background-position: 0 -240px;
+}
+
+.postbit_buttons a.postbit_purgespammer span {
+	background-position: 0 -540px;
+}
+
+.postbit_buttons a.postbit_reply_pm span {
+	background-position: 0 -260px;
+}
+
+.postbit_buttons a.postbit_reply_all span {
+	background-position: 0 -280px;
+}
+
+.postbit_buttons a.postbit_forward_pm span {
+	background-position: 0 -300px;
+}
+
+.postbit_buttons a.postbit_delete_pm span {
+	background-position: 0 -320px;
+}
+
+a.button:link,
+a.button:hover,
+a.button:visited,
+a.button:active {
+	background: #0f0f0f url(http://st.10tl.net/tema/edward/image18/default/tcat.png) repeat-x;
+	color: #fff;
+	display: inline-block;
+	padding: 4px 8px;
+	margin: 2px 2px 6px 2px;
+	border: 1px solid #000;
+	font-size: 14px;
+}
+
+a.button.small_button {
+	font-size: 13px;
+	margin: 0;
+	padding: 3px 6px;
+}
+
+a.button span {
+	padding-left: 20px;
+	display: inline-block;
+	background-image: url(http://st.10tl.net/tema/edward/image18/default/buttons_sprite.png);
+	background-repeat: no-repeat;
+}
+
+a.button.new_thread_button span {
+	background-position: 0 -340px;
+}
+
+a.button.new_reply_button span {
+	background-position: 0 -360px;
+}
+
+a.button.closed_button span {
+	background-position: 0 -380px;
+}
+
+a.button.rate_user_button span {
+	background-position: 0 -400px;
+}
+
+a.button.add_buddy_button span {
+	background-position: 0 -440px;
+}
+
+a.button.remove_buddy_button span {
+	background-position: 0 -480px;
+}
+
+a.button.add_ignore_button span {
+	background-position: 0 -460px;
+}
+
+a.button.remove_ignore_button span {
+	background-position: 0 -500px;
+}
+
+a.button.report_user_button span {
+	background-position: 0 -520px;
+}
+
+.quick_jump {
+	background: url(http://st.10tl.net/tema/edward/image18/default/jump.png) no-repeat 0;
+	width: 13px;
+	height: 13px;
+	padding-left: 13px; /* amount of padding needed for image to fully show */
+	margin-top: -3px;
+	border: none;
+}
+
+.pollbar {
+	background: url(http://st.10tl.net/tema/edward/image18/default/pollbar.png) top left repeat-x;
+	border: 1px solid #3f3f3f;
+	height: 10px;
+}
+
+.pollbar .percent {
+	display: none;
+}
+
+.posticons_label {
+	white-space: nowrap;
+}
+
+/** jGrowl Start **/
+
+/** Special IE6 Style Positioning **/
+.ie6 {
+	position: absolute;
+}
+
+.ie6.top-right {
+	right: auto;
+	bottom: auto;
+	left: expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.top-left {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.bottom-right {
+	left: expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.bottom-left {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.center {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+	width: 100%;
+}
+
+/** jGrowl Styling **/
+.jGrowl {
+	z-index: 9999;
+	color: #fff;
+	font-size: 12px;
+	position: fixed;
+}
+
+.jGrowl.top-left {
+	left: 0px;
+	top: 0px;
+}
+
+.jGrowl.top-right {
+	right: 0px;
+	top: 0px;
+}
+
+.jGrowl.bottom-left {
+	left: 0px;
+	bottom:	0px;
+}
+
+.jGrowl.bottom-right {
+	right: 0px;
+	bottom: 0px;
+}
+
+.jGrowl.center {
+	top: 0px;
+	width: 50%;
+	left: 25%;
+}
+
+/** Cross Browser Styling **/
+
+.center .jGrowl-notification,
+.center .jGrowl-closer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.jGrowl .jGrowl-notification,
+.jGrowl .jGrowl-closer {
+	background-color: #000;
+	opacity: .85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+	zoom: 1;
+	width: 235px;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	text-align: left;
+	display: none;
+	border-radius: 5px;
+}
+
+.jGrowl .jGrowl-notification {
+	min-height: 40px;
+}
+
+.jGrowl .jGrowl-notification,
+.jGrowl .jGrowl-closer {
+	margin: 10px;
+}
+
+.jGrowl .jGrowl-notification .jGrowl-header {
+	font-weight: bold;
+	font-size: .85em;
+}
+
+.jGrowl .jGrowl-notification .jGrowl-close {
+	z-index: 99;
+	float: right;
+	font-weight: bold;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.jGrowl .jGrowl-closer {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	cursor: pointer;
+	font-size: .9em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/** Hide jGrowl when printing **/
+@media print {
+	.jGrowl {
+		display: none;
+}
+
+
+}
+
+/** jGrowl End **/
+
+/** Modal Start **/
+
+.modal {
+	display: none;
+	width: 400px;
+	text-align: left;
+	background: #fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 10px #000;
+	-moz-box-shadow: 0 0 10px #000;
+	-o-box-shadow: 0 0 10px #000;
+	-ms-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+}
+
+.modal a.close-modal {
+	position: absolute;
+	top: -12.5px;
+	right: -12.5px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	background: url(http://st.10tl.net/tema/edward/image18/default/close.png) no-repeat 0 0;
+}
+
+.modal-spinner {
+	display: none;
+	width: 64px;
+	height: 64px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-right: -32px;
+	margin-top: -32px;
+	background: url(http://st.10tl.net/tema/edward/image18/default/spinner_big.gif) no-repeat center center;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+}
+
+/** Modal End **/
+
+/** Impromptu Start **/
+
+/*! jQuery-Impromptu - v5.2.4 - 2014-05-26
+* http://trentrichardson.com/Impromptu
+* Copyright (c) 2014 Trent Richardson; Licensed MIT */
+
+.jqifade {
+	position: absolute;
+	background-color: #777777;
+}
+
+div.jqi {
+	width: 400px;
+	max-width:90%;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	position: absolute;
+	background-color: #ffffff;
+	font-size: 11px;
+	text-align: left;
+	border: solid 1px #eeeeee;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 7px;
+}
+
+div.jqi .jqiclose {
+	position: absolute;
+	top: 4px; right: -2px;
+	width: 18px;
+	cursor: default;
+	color: #bbbbbb;
+	font-weight: bold;
+}
+
+div.jqi .jqistate {
+	background-color: #fff;
+}
+
+div.jqi .jqititle {
+	padding: 5px 10px;
+	font-size: 16px;
+	line-height: 20px;
+	border-bottom: solid 1px #eeeeee;
+}
+
+div.jqi .jqimessage {
+	padding: 10px;
+	line-height: 20px;
+	color: #444444;
+}
+
+div.jqi .jqibuttons {
+	text-align: right;
+	margin: 0 -7px -7px -7px;
+	border-top: solid 1px #e4e4e4;
+	background-color: #f4f4f4;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+
+div.jqi .jqibuttons button {
+	margin: 0;
+	padding: 15px 20px;
+	background-color: transparent;
+	font-weight: normal;
+	border: none;
+	border-left: solid 1px #e4e4e4;
+	color: #777;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+div.jqi .jqibuttons button.jqidefaultbutton {
+	color: #489afe;
+}
+
+div.jqi .jqibuttons button:hover,
+div.jqi .jqibuttons button:focus {
+	color: #287ade;
+	outline: none;
+}
+
+.jqiwarning .jqi .jqibuttons {
+	background-color: #b95656;
+}
+
+/* sub states */
+
+div.jqi .jqiparentstate::after {
+	background-color: #777;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+div.jqi .jqisubstate {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	width: 60%;
+	padding: 7px;
+	border: solid 1px #eeeeee;
+	border-top: none;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+
+div.jqi .jqisubstate .jqibuttons button {
+	padding: 10px 18px;
+}
+
+/* arrows for tooltips/tours */
+
+.jqi .jqiarrow {
+	position: absolute;
+	height: 0; width: 0;
+	line-height: 0;
+	font-size: 0;
+	border: solid 10px transparent;
+}
+
+.jqi .jqiarrowtl {
+	left: 10px;
+	top: -20px;
+	border-bottom-color: #ffffff;
+}
+
+.jqi .jqiarrowtc {
+	left: 50%;
+	top: -20px;
+	border-bottom-color: #ffffff;
+	margin-left: -10px;
+}
+
+.jqi .jqiarrowtr {
+	right: 10px;
+	top: -20px;
+	border-bottom-color: #ffffff;
+}
+
+.jqi .jqiarrowbl {
+	left: 10px;
+	bottom: -20px;
+	border-top-color: #ffffff;
+}
+
+.jqi .jqiarrowbc {
+	left: 50%;
+	bottom: -20px;
+	border-top-color: #ffffff;
+	margin-left: -10px;
+}
+
+.jqi .jqiarrowbr {
+	right: 10px;
+	bottom: -20px;
+	border-top-color: #ffffff;
+}
+
+.jqi .jqiarrowlt {
+	left: -20px;
+	top: 10px;
+	border-right-color: #ffffff;
+}
+
+.jqi .jqiarrowlm {
+	left: -20px;
+	top: 50%;
+	border-right-color: #ffffff;
+	margin-top: -10px;
+}
+
+.jqi .jqiarrowlb {
+	left: -20px;
+	bottom: 10px;
+	border-right-color: #ffffff;
+}
+
+.jqi .jqiarrowrt {
+	right: -20px;
+	top: 10px;
+	border-left-color: #ffffff;
+}
+
+.jqi .jqiarrowrm {
+	right: -20px;
+	top: 50%;
+	border-left-color: #ffffff;
+	margin-top: -10px;
+}
+
+.jqi .jqiarrowrb {
+	right: -20px;
+	bottom: 10px;
+	border-left-color: #ffffff;
+}
+
+/** Impromptu End */
+
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="css3.css" version="1830"><![CDATA[
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="exe.css" version="1830"><![CDATA[/***
+17.03.2019
+PSD TO MYBB
+CODER MURAT BAYKAM
+***/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebargrouptext {
+    float: right;
+    padding: 3px;
+    position: relative;
+    min-width: 150px;
+    height: 20px;
+    margin: -1px -15px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 1px 0px 0px rgb(188 191 195 / 26%);
+}
+
+.sidebarucp {
+    position: fixed;
+    right: -19px;
+    z-index: 1;
+    top: 40%;
+    background: linear-gradient(274deg, rgb(222 227 235) 0%, rgb(223 229 236) 100%);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: -4px 5px 0px 0px rgb(112 111 111 / 35%);
+}
+
+
+.columns {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.columns li 
+{
+width: 33%; 
+float: left;
+}
+
+
+.exeheader {
+    padding: 0px 7%;
+    height: 75px;
+    /* border-bottom: 1px solid #37415136; */
+    background: linear-gradient(90deg, rgb(99 165 251 / 36%) 0%, rgb(158 144 252 / 48%) 26%, rgb(191 132 252 / 49%) 52%, rgb(231 120 175 / 46%) 77%, rgb(250 113 134 / 52%) 100%);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+}
+.exeheader li {
+    float: left;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+.exeheader li a {
+    text-decoration: none;
+    display: block;
+    padding: 7px 15px;
+    transition: all .5s;
+    text-transform: uppercase;
+    height: 75px;
+    border-radius: 0;
+}
+.exeheader li a:hover{
+	background: #ffffff;
+	border-radius:5px;
+	color:#000000;
+}
+.active1 {
+    background-color: #ffffff59;
+    border-radius: 5px;
+    color: black !important;
+}
+.active1:hover{
+	transition:all .5s;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	background-color:red;
+	color: black !important;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+
+.moderationbuttons {
+    position: fixed;
+    left: -46px;
+    z-index: 1;
+    top: 40%;
+    background: linear-gradient(274deg, rgb(226 232 240) 0%, rgb(200 204 209) 100%);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 6px 7px 0px 0px rgb(151 151 151 / 35%);
+}
+.forumstitleexe {
+    text-decoration: none;
+    color: #34495e;
+    text-shadow: 0px -1px 0px #882adc0f;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(270deg, #8628d9 10%, #374151, #374151);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+
+.exefamenu {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #374151;
+    text-shadow: 1px 1px 1px #28282840;
+}
+
+
+.exeblock {
+    height: 350px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(99,165,251,1) 0%, rgba(158,144,252,1) 26%, rgba(191,132,252,1) 52%, rgba(231,120,175,1) 77%, rgba(250,113,134,1) 100%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.exeblock img {
+    /* float: left; */
+    margin-top: 30px;
+    /* margin-left: 235px; */
+}
+.exeic {
+    width: 85%;
+    border-radius: 4px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 180px;
+    box-shadow: -2px 4px 0px 0px rgb(151 151 151 / 35%), 2px 3px 0px 0px rgb(151 151 151 / 35%);
+}
+
+.exeblockf {
+    height: 250px !important;
+    position: unset !important;
+    background: linear-gradient(90deg, rgba(99,165,251,1) 0%, rgba(158,144,252,1) 26%, rgba(191,132,252,1) 52%, rgba(231,120,175,1) 77%, rgba(250,113,134,1) 100%) !important;
+    z-index: 2;
+    width: 100%;
+    border-top: 2px solid #e5eaf0 !important;
+    border-bottom: 2px solid #e5eaf0 !important;
+    padding: 0 100px;
+}
+
+.numthreads {
+    text-align: start;
+    padding: 10px;
+    background: white;
+    box-shadow: -3px 5px 0px 0px rgb(151 151 151 / 35%) !important;
+    border: 1px solid #dbdbdb;
+    /* width: 50%; */
+    float: right;
+    font-size: 10px;
+}
+
+.exelast {
+    height: 60px !important;
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #d1dee7 !important;
+    box-shadow: -3px 5px 0px 0px rgb(151 151 151 / 35%) !important;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+   /*  width: 65%;
+     float: left; */  
+}
+
+#content {
+    background: #e2e8f0;
+    width: auto !important;
+    padding: 25px 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: -50px;
+}
+
+.wrapper {
+    width: 100%;
+    min-width: 970px;
+    max-width: -webkit-fill-available;
+    margin: auto auto;
+}
+
+
+.exeduyuru {
+    /* width: 95%; */
+    height: 35px;
+    border-radius: 5px;
+    background: #374151;
+    /* background: linear-gradient(90deg, rgba(99,165,251,1) 0%, rgba(158,144,252,1) 26%, rgba(191,132,252,1) 52%, rgba(231,120,175,1) 77%, rgba(250,113,134,1) 100%); */
+    margin-bottom: 5px;
+}
+
+.exeduyuru a{
+	float:left;
+	color:#fff;
+	text-decoration:none;
+	margin-top:7px;
+	margin-left:10px;
+}
+.duyuruikon {
+    color: #fff;
+    float: left;
+    width: 115px;
+    font-size: 10px;
+    height: 35px;
+    background-color: #1db581;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.duyuruikon i{
+	padding-top:12px;
+}
+.exeduyuru2 {
+    height: 35px;
+    background-color: #3498db;
+    width: -webkit-fill-available;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+.exeduyuru2 a{
+	float:left;
+	color:#fff;
+	text-decoration:none;
+	margin-top:7px;
+	margin-left:10px;
+}
+.duyuruikon2 {
+    color: #fff;
+    float: left;
+    width: 115px;
+    height: 35px;
+    background-color: #2980b9;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 10px;
+    line-height: 35px;
+    text-align: center;
+}
+.duyuruikon2 i {
+    /* padding: 10px; */
+}
+/** Modal Start **/
+ 
+.blocker {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 9999;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.75);
+    text-align: center;
+}
+ 
+
+
+.sideblock {
+    background: linear-gradient(90deg, #8024d1 0%, #9131e7 100%);
+    border-radius: 5px;
+    /* border: 10px solid white; */
+    box-shadow: -3px 5px 0px 0px rgb(151 151 151 / 64%);
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+.sideblockcontent {
+
+}
+
+
+
+
+.blocker:before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.05em;
+}
+ 
+.blocker.behind {
+    background-color: transparent;
+}
+ 
+.modal {
+    width: 400px;
+    text-align: left;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 10px #000;
+    -moz-box-shadow: 0 0 10px #000;
+    -o-box-shadow: 0 0 10px #000;
+    -ms-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+}
+ 
+.modal a.close-modal {
+    position: absolute;
+    top: -12.5px;
+    right: -12.5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background: url(images/close.png) no-repeat 0 0;
+}
+ 
+.modal-spinner {
+    display: none;
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -32px;
+    margin-top: -32px;
+    background: url(images/spinner_big.gif) no-repeat center center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+}
+ 
+/** Modal End **/
+
+.exereklam{
+	height:28px;
+	width:215px;
+	background-color:#d35400;
+	color:#fff;
+}
+.exepostbit{
+	height:81px;
+	background:url("https://i.hizliresim.com/5alyLD.png");
+	width:215px;
+	position:absolute;
+}
+.exepostbit_cizgi {
+    height: 18px;
+    /* background-color: #d35400; */
+    margin-top: 20px;
+    position: absolute;
+    width: 215px;
+    margin-top: 70px;
+}
+.exeinfo {
+    background-color: #3498db;
+    /* height: 20px; */
+    width: 190px;
+    color: #fff;
+    border: 9px solid #3498db;
+    margin-left: -4px;
+    border-radius: 3px;
+    box-shadow: 3px 4px 0px 0px rgb(151 151 151 / 35%);
+}
+.exeinfo_kutu{
+	background-color:#2980b9;
+	width:15px;
+	height:20px;
+	float:left;
+}
+.exeinfo_sagucgen{
+    background-color:#2980b9;
+    height:20px;
+	width:70px;
+	float:right;
+	 -webkit-clip-path: polygon(61% 0, 100% 0%, 100% 100%, 45% 100%);
+	 clip-path: polygon(61% 0, 100% 0%, 100% 100%, 45% 100%);
+}
+.exeinfo2 {
+    height: 49px;
+    width: 90px;
+    margin-left: 10px;
+    background-color: #2c3e50;
+    border-bottom: 2px solid #202f3e;
+    float: left;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 3px 4px 0px 0px rgb(151 151 151 / 35%);
+}
+.exepostbitkutu {
+    width: 190px;
+    height: 35px;
+    line-height: 25px;
+    background-color: #8427d6;
+    border-bottom: 2px solid #374151;
+    float: left;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: 3px 4px 0px 0px rgb(151 151 151 / 35%);
+}
+.exereslogo{
+	display:none;
+    float: left;
+    padding: 15px;
+    font-size: 20px;
+}
+.exereslogo2{
+	display:none;
+    padding: 15px;
+}
+.res{
+	display:none;
+}
+
+@media screen and (max-width: 768px), screen and (max-device-width: 768px) {
+.numthreads {
+	display:none;
+}
+
+}
+
+
+@media screen and (max-width: 1024px), screen and (max-device-width: 1024px) {
+	
+.tborder {
+    background: #fff;
+    width: 86%;
+    margin: 0;
+    border: 1px solid #cacdd1;
+    border-radius: 8px;
+    box-shadow: -3px 5px 0px 0px rgb(151 151 151 / 35%);
+    padding: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
+    .exeblock {
+	display: block;
+    }
+	.exeheader li{
+	display: none;
+	}
+	.exereslogo{
+	display:block;
+	}
+	.exeic{
+	margin-top:0px;
+	}
+	.exeduyuru{
+	display:none;
+	}
+	.exeduyuru2{
+	width:100%;
+	}
+
+	.exelast{
+	width:250px;
+	}
+	.avatar{
+	display:none;
+	}
+	.tborder{
+	width:79%;
+	margin:0;
+	}
+	.exeblockf{
+	width:400px;
+	}
+	.text{
+	display:none;
+	}
+	
+				
+ 
+	
+
+#container {
+    width: 800px;
+    margin-top: 50px;
+}
+	.exereslogo2{
+	display:block;
+	}
+	.exeinfo2{
+	display:none;
+	}
+	.exereklam{
+	display:none;
+	}
+	.exepostbit{
+	display:none;
+	}
+	.exepostbit_cizgi{
+	display:none;
+	}
+	.exeinfo{
+	display:none;
+	}
+	.exepostbitkutu{
+	display:none;
+	}
+	.res{
+	display:block;
+	}
+	.mobilrate{
+	display:none;
+	}
+}
+		
+.footertips {
+    padding: 20px 5px;
+    margin: 5px;
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+    background: #fbeef64a;
+    border-radius: 5px;
+    height: 20px;
+    align-items: center;
+    color: black;
+    box-shadow: -2px 4px 0px 0px rgb(151 151 151 / 35%);
+}
+
+
+.footertipsbutton {
+    margin: 0px 20px 0 0px;
+    background: -webkit-linear-gradient(149deg, #d7be6f 10%, #ad7b21, #faf3b4) !important;
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0e0e10;
+}
+
+
+.footertipstext {
+    font-size: 15px;
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+
+
+.faiconsreg {
+    background: rgb(96,165,250);
+    margin: 0px 5px 0 0px;
+    background: -webkit-linear-gradient(0deg, #3bcd70 10%, #26b55a, #27b65b) !important;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.faiconslog {
+    background: rgb(96,165,250);
+    background: linear-gradient(90deg, rgb(5 209 20) 31%, rgb(46 181 2) 68%);
+    margin: 0px 5px 0 0px;
+    background: -webkit-linear-gradient(0deg, #5093f6 10%, #3e8af9, #0342a1) !important;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+
+
+.flexright {
+    float: right;
+    display: flex;
+    justify-content: center;
+    height: 69px;
+    align-items: center;
+    text-decoration: none;
+    align-content: center;
+}
+
+
+.tabsstylemenu {
+    box-shadow: 0 0 8px 0px rgb(171 171 171);
+    background: linear-gradient(90deg, rgba(99,165,251,1) 0%, rgba(158,144,252,1) 26%, rgba(191,132,252,1) 52%, rgba(231,120,175,1) 77%, rgba(250,113,134,1) 100%);
+    border-bottom: 3px solid #f0f0f0;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0px 2px 20px 2px;
+    padding: 15px;
+    border-radius: 100px;
+}
+	]]>
+		</stylesheet>
+		<stylesheet name="responsive.css" version="1830"><![CDATA[@media screen and (max-width: 1440px) {
+  
+		.columns li {
+    width: 33% !important;
+    float: left;
+}	
+}
+
+
+@media screen and (max-width: 1024px) {
+  
+		.columns li {
+    width: 50% !important;
+    float: left;
+}	
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+	.columns li {
+    width: 50% !important;
+    float: left;
+		}	
+		
+
+
+}
+}
+
+
+@media screen and (max-width: 768px) {
+	.columns li {
+    width: 50% !important;
+    float: left;
+}
+	
+	
+	
+
+	
+	
+}
+
+
+@media screen and (max-width: 600px) {
+	.columns li {
+    width: 100% !important;
+    float: left;
+}
+}
+
+
+@media screen and (max-width: 425px) {
+	.columns li {
+    width: 100% !important;
+    float: left;
+}
+}
+
+
+
+@media screen and (max-width: 375px) {
+	.columns li {
+    width: 100% !important;
+    float: left;
+}
+}
+
+
+@media screen and (max-width: 320px) {
+	.columns li {
+    width: 100% !important;
+    float: left;
+}
+}]]>
+		</stylesheet>
+		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1830"><![CDATA[.usercp_nav_item {
+	display: block;
+	padding: 1px 0 1px 23px;
+	background-image: url(http://st.10tl.net/tema/edward/image18/default/usercp_sprite.png);
+	background-repeat: no-repeat;
+}
+.usercp_nav_composepm {
+	background-position: 0 0;
+}
+
+.usercp_nav_pmfolder {
+	background-position: 0 -20px;
+}
+
+.usercp_nav_sub_pmfolder {
+	padding-left: 40px;
+	background-position: 0 -40px;
+}
+
+.usercp_nav_trash_pmfolder {
+	padding-left: 40px;
+	background-position: 0 -60px;
+}
+
+.usercp_nav_pmtracking {
+	background-position: 0 -80px;
+}
+
+.usercp_nav_pmfolders {
+	background-position: 0 -100px;
+}
+
+.usercp_nav_profile {
+	background-position: 0 -120px;
+}
+
+.usercp_nav_email {
+	padding-left: 40px;
+	background-position: 0 -140px;
+}
+
+.usercp_nav_password {
+	padding-left: 40px;
+	background-position: 0 -160px;
+}
+
+.usercp_nav_username {
+	padding-left: 40px;
+	background-position: 0 -180px;
+}
+
+.usercp_nav_editsig {
+	padding-left: 40px;
+	background-position: 0 -200px;
+}
+
+.usercp_nav_avatar {
+	padding-left: 40px;
+	background-position: 0 -220px;
+}
+
+.usercp_nav_options {
+	background-position: 0 -240px;
+}
+
+.usercp_nav_usergroups {
+	background-position: 0 -260px;
+}
+
+.usercp_nav_editlists {
+	background-position: 0 -280px;
+}
+
+.usercp_nav_attachments {
+	background-position: 0 -300px;
+}
+
+.usercp_nav_drafts {
+	background-position: 0 -320px;
+}
+
+.usercp_nav_subscriptions {
+	background-position: 0 -340px;
+}
+
+.usercp_nav_fsubscriptions {
+	background-position: 0 -360px;
+}
+
+.usercp_nav_viewprofile {
+	background-position: 0 -380px;
+}
+
+.usercp_nav_home {
+	background-position: 0 -400px;
+}
+
+.usercp_notepad {
+	width: 99%;
+}
+
+.usercp_container {
+	margin: 5px;
+	padding: 8px;
+	border:1px solid #CCCCCC;
+}
+
+.pmspace {
+	float: right;
+	margin: -3px 5px;
+}
+
+.pmspace_container {
+	background: #fff;
+	border: 1px solid #ccc;
+	width: 100px;
+	display: inline-block;
+}
+
+.pmspace_used {
+	display: inline-block;
+	color: #fff;
+	margin: -1px;
+}
+
+.pmspace_used.low {
+	border: 1px solid #0c5a01;
+	background: #167203;
+}
+
+.pmspace_used.medium {
+	background: #ff862b;
+	border: 1px solid #d7611e;
+}
+
+.pmspace_used.high {
+	background: #e73c3c;
+	border: 1px solid #c00;
+}
+
+.pmspace_unused {
+	display: inline-block;
+}
+
+.pmspace_text {
+	padding: 1px 5px;
+	display: inline-block;
+}
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1830"><![CDATA[.thread_status {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-repeat: no-repeat;
+    border-radius: 333px;
+
+    margin: 0px 20px;
+}
+
+.thread_status.dot_folder {
+    background: #191a21;
+}
+
+.thread_status.dot_hotfolder {
+    background: #8a69c2;
+}
+
+.thread_status.dot_hotclosefolder {
+    background: #7b0000;
+}
+
+.thread_status.dot_closefolder {
+	    background: #7b0000;
+}
+
+.thread_status.dot_newfolder {
+background: #007f22;
+}
+
+.thread_status.dot_newhotfolder {
+background: #007f22;
+}
+
+.thread_status.dot_newhotclosefolder {
+    background: #7b0000;
+}
+
+.thread_status.dot_newclosefolder {
+    background: #7b0000;
+}
+
+.thread_status.folder {
+            background: #191a21;
+}
+
+.thread_status.hotfolder {
+background: #007f22;
+}
+
+.thread_status.hotclosefolder {
+    background: #7b0000;
+}
+
+.thread_status.closefolder {
+    background: #7b0000;
+}
+
+.thread_status.movefolder {
+    background: #006dd2;
+}
+
+.thread_status.newfolder {
+background: #007f22;
+}
+
+.thread_status.newhotfolder {
+background: #007f22;
+}
+
+.thread_status.newhotclosefolder {
+    background: #7b0000;
+}
+
+.thread_status.newclosefolder {
+    background: #7b0000;
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1830"><![CDATA[.star_rating,
+.star_rating li a:hover,
+.star_rating .current_rating {
+	background: url(http://st.10tl.net/tema/edward/image18/default/star_rating.png) left -1000px repeat-x;
+	vertical-align: middle;
+}
+
+.star_rating {
+	position: relative;
+	width:80px;
+	height:16px;
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-position: left top;
+}
+
+td .star_rating {
+	margin: auto;
+}
+
+.star_rating li {
+	display: inline;
+}
+
+.star_rating li a,
+.star_rating .current_rating {
+	position: absolute;
+	text-indent: -1000px;
+	height: 16px;
+	line-height: 16px;
+	outline: none;
+	overflow: hidden;
+	border: none;
+	top:0;
+	left:0;
+}
+
+.star_rating_notrated li a:hover {
+	background-position: left bottom;
+}
+
+.star_rating li a.one_star {
+	width:20%;
+	z-index:6;
+}
+
+.star_rating li a.two_stars {
+	width:40%;
+	z-index:5;
+}
+
+.star_rating li a.three_stars {
+	width:60%;
+	z-index:4;
+}
+
+.star_rating li a.four_stars {
+	width:80%;
+	z-index:3;
+}
+
+.star_rating li a.five_stars {
+	width:100%;
+	z-index:2;
+}
+
+.star_rating .current_rating {
+	z-index:1;
+	background-position: left center;
+}
+
+.star_rating_success,
+.success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.inline_rating {
+	background: url(http://st.10tl.net/tema/edward/image18/default/star_rating.png) left -1000px repeat-x;
+	float: left;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1830"><![CDATA[ul.thread_tools,
+ul.thread_tools li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.thread_tools li {
+	padding-left: 24px;
+	padding-bottom: 4px;
+	margin-bottom: 3px;
+	font-size: 11px;
+	background-image: url(http://st.10tl.net/tema/edward/image18/default/showthread_sprite.png);
+	background-repeat: no-repeat;
+}
+
+ul.thread_tools li.printable {
+	background-position: 0 0;
+}
+
+ul.thread_tools li.sendthread {
+	background-position: 0 -20px;
+}
+
+ul.thread_tools li.subscription_add {
+	background-position: 0 -40px;
+}
+
+ul.thread_tools li.subscription_remove {
+	background-position: 0 -60px;
+}
+
+ul.thread_tools li.poll {
+	background-position: 0 -80px;
+}
+
+.showthread_spinner {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
+
+
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1830"><![CDATA[.modcp_nav_item {
+	display: block;
+	padding: 1px 0 1px 23px;
+	background-image: url(http://st.10tl.net/tema/edward/image18/default/modcp_sprite.png);
+	background-repeat: no-repeat;
+}
+
+.modcp_nav_home {
+	background-position: 0 0;
+}
+
+.modcp_nav_announcements {
+	background-position: 0 -20px;
+}
+
+.modcp_nav_reports {
+	background-position: 0 -40px;
+}
+
+.modcp_nav_modqueue {
+	background-position: 0 -60px;
+}
+
+.modcp_nav_modlogs {
+	background-position: 0 -80px;
+}
+
+.modcp_nav_editprofile {
+	background-position: 0 -100px;
+}
+
+.modcp_nav_banning {
+	background-position: 0 -120px;
+}
+
+.modcp_nav_warninglogs {
+	background-position: 0 -140px;
+}
+
+.modcp_nav_ipsearch {
+	background-position: 0 -160px;
+}
+
+.modqueue_message {
+	overflow: auto;
+	max-height: 250px;
+}
+
+.modqueue_controls {
+	width: 270px;
+	float: right;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 6px;
+	font-weight: bold;
+}
+
+.modqueue_controls label {
+	margin-right: 8px;
+}
+
+.label_radio_ignore,
+.label_radio_delete,
+.label_radio_approve {
+	font-weight: bold;
+}
+
+.modqueue_meta {
+	color: #444;
+	font-size: 95%;
+	margin-bottom: 8px;
+}
+
+.modqueue_mass {
+	list-style: none;
+	margin: 0;
+	width: 150px;
+	padding: 0;
+}
+
+.modqueue_mass li {
+	margin-bottom: 4px;
+	padding: 0;
+}
+
+.modqueue_mass li a {
+	display: block;
+	padding: 4px;
+	border: 1px solid transparent;
+}
+
+.modqueue_mass li a:hover {
+	background: #efefef;
+	border: 1px solid #ccc;
+	text-decoration: none;
+}
+		
+		
+		
+		]]>
+		</stylesheet>
+	</stylesheets>
+	<templates>
+		<template name="footer" version="1830"><![CDATA[	</div>
+</div>
+</div>
+<div class="exeblockf"><br><br><br><br><br><br>
+	
+	
+	
+	
+	<div class="text">
+	<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				{$lang->powered_by} <a href="https://mybb.com" target="_blank" rel="noopener">MyBB{$mybbversion}</a>, &copy; 2002-{$copy_year} <a href="https://mybb.com" target="_blank" rel="noopener">MyBB Group</a>.
+			
+				<!-- End powered by -->
+</div>
+	
+	<div class="text2"> @ PlayTV Themes & Templates </div>
+</div>
+
+<style>
+	.exeblockf{
+		height:50px;
+		background-color:#34495e;	
+		position:absolute;
+		width:100%;
+		border-top:2px solid #2c3e50;
+		border-bottom:2px solid #2c3e50;
+	}
+	.exeblockf a{
+		color:#fff;
+	}
+	.exeblockf{
+		color:#fff;
+	}
+	.text{
+		float:left;
+		padding:15px;
+	}
+	.text2{
+		float:right;
+		padding:15px;
+		font-size:15px;
+	}
+</style>
+
+
+<div class="footerbottom" style="background: #e5eaf0;padding: 10px;width: 80%;margin: auto;text-align: center;"> SOME FOOTER INFORMATION LIKE COPYRIGHTS </div>]]></template>
+		<template name="forumbit_depth1_cat" version="1830"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<thead>
+<tr>
+<td class="thead{$expthead}" colspan="5">
+<div class="expcolimage" style="display: none;"><img src="{$theme['imgdir']}/{$expcolimage}" id="cat_{$forum['fid']}_img" class="expander" alt="{$expaltext}" title="{$expaltext}" /></div>
+<div><strong style="line-height: 25px;"><a href="{$forum_url}" style="font-size: 15px;line-height: 32px;text-decoration: none;">{$forum['name']}</a></strong><br /><div class="smalltext">{$forum['description']}</div></div>
+</td>
+</tr>
+</thead>
+<tbody style="{$expdisplay}" id="cat_{$forum['fid']}_e">
+{$sub_forums}
+</tbody>
+</table>
+<br />]]></template>
+		<template name="forumbit_depth2_cat" version="1830"><![CDATA[<tr>
+<td class="{$bgcolor}" align="center" style="width: 10%;"><div class="s" style="margin-left:5px;"><div style="width: 65px;margin-right: 10px;"> {$forum['icon']}</div><span class="forum_status forum_{$lightbulb['folder']} ajax_mark_read" title="{$lightbulb['altonoff']}" id="mark_read_{$forum['fid']}"></span></div></div></td>
+<td class="{$bgcolor}" style="width: 45%;">
+	<strong><a href="{$forum_url}" style="text-decoration:none;color:#34495e;" class="forumstitleexe"><b>{$forum['name']}</b></a></strong>{$forum_viewers_text}
+	<div class="fdescription smalltext">{$forum['description']}</div><div class="smalltext">{$modlist}{$subforums}</div>
+</td>
+
+<td class="{$bgcolor}" align="center" style="white-space: nowrap;width: 10%;"> <div class="numthreads"> <i class="fas fa-comment-alt"></i>  {$threads}{$unapproved['unapproved_threads']} THREADS </br> <i class="fas fa-comment"></i>  {$posts}{$unapproved['unapproved_posts']} POSTS </div></td>
+<td class="{$bgcolor}" align="right" style="white-space: nowrap">
+	<div class="exelast">{$lastpost}
+	</div>
+	</td>
+</tr>]]></template>
+		<template name="forumbit_depth2_forum" version="1830"><![CDATA[<tr>
+<td class="{$bgcolor}" align="center" style="width: 10%;"><div class="s" style="margin-left:5px;"><div style="width: 65px;margin-right: 10px;"> {$forum['icon']}</div><span class="forum_status forum_{$lightbulb['folder']} ajax_mark_read" title="{$lightbulb['altonoff']}" id="mark_read_{$forum['fid']}"></span></div></div></td>
+<td class="{$bgcolor}" style="width: 45%;">
+	<strong><a href="{$forum_url}" style="text-decoration:none;color:#34495e;" class="forumstitleexe"><b>{$forum['name']}</b></a></strong>{$forum_viewers_text}
+	<div class="fdescription smalltext">{$forum['description']}</div><div class="smalltext">{$modlist}{$subforums}</div>
+</td>
+
+<td class="{$bgcolor}" align="center" style="white-space: nowrap;width: 10%;"> <div class="numthreads"> <i class="fas fa-comment-alt"></i>  {$threads}{$unapproved['unapproved_threads']} THREADS </br> <i class="fas fa-comment"></i>  {$posts}{$unapproved['unapproved_posts']} POSTS </div></td>
+<td class="{$bgcolor}" align="right" style="white-space: nowrap">
+	<div class="exelast">{$lastpost}
+	</div>
+	</td>
+</tr>]]></template>
+		<template name="forumbit_depth2_forum_lastpost" version="1820"><![CDATA[	<div class="avatar" style="float:right;padding:2px;">
+		<img width="50px" height="50px" onerror="this.style.display='none'" src="{$mybb->settings['bburl']}/uploads/avatars/avatar_{$lastpost_data['lastposteruid']}.png" alt="Kullanıcının Avatarı" title="Kullanıcının Avatarı" >
+		<img width="50px" onerror="this.style.display='none'" height="50px" src="{$mybb->settings['bburl']}/uploads/avatars/avatar_{$lastpost_data['lastposteruid']}.jpg" alt="Kullanıcının Avatarı" title="Kullanıcının Avatarı">
+		<img width="50px" onerror="this.style.display='none'" height="50px" src="{$mybb->settings['bburl']}/uploads/avatars/avatar_{$lastpost_data['lastposteruid']}.gif" alt="Kullanıcının Avatarı" title="Kullanıcının Avatarı">
+		<img width="50px" onerror="this.style.display='none'" height="50px" src="{$mybb->settings['bburl']}/uploads/avatars/avatar_{$lastpost_data['lastposteruid']}.bmp" alt="Kullanıcının Avatarı" title="Kullanıcının Avatarı">
+		<img width="50px" onerror="this.style.display='none'" height="50px" src="{$mybb->settings['bburl']}/uploads/avatars/avatar_{$lastpost_data['lastposteruid']}.jpeg" alt="Kullanıcının Avatarı" title="Kullanıcının Avatarı"></div>
+<div class="smalltext" style="padding:10px;">
+<a href="{$lastpost_link}" title="{$full_lastpost_subject}"><strong>{$lastpost_subject}</strong></a>
+<br />{$lastpost_date}<br />{$lang->by} {$lastpost_profilelink}</span>
+<style>
+	.avatar img{
+	border-radius:50px;
+	border: 2px solid #596a7b;
+	}
+</style>]]></template>
+		<template name="forumbit_depth2_forum_lastpost_never" version="1820"><![CDATA[<div style="text-align: center;padding:15px;">{$lang->lastpost_never}</div>]]></template>
+		<template name="forumbit_depth3" version="1830"><![CDATA[<li>{$statusicon}<a href="forumdisplay.php?fid={$forum['fid']}" title="{$forum_viewers_text_plain}">{$forum['name']}</a></li>]]></template>
+		<template name="forumbit_depth3_statusicon" version="1830"><![CDATA[<span title="{$lightbulb['altonoff']}" class="subforumicon subforum_{$lightbulb['folder']} ajax_mark_read" id="mark_read_{$forum['fid']}" ></span>]]></template>
+		<template name="forumbit_moderators" version="1830"><![CDATA[{$lang->forumbit_moderated_by} {$moderators}]]></template>
+		<template name="forumbit_subforums" version="1830"><![CDATA[<ul class="columns" style="text-transform: uppercase;">{$sub_forums}</ul>]]></template>
+		<template name="forumdisplay_announcement_rating" version="1821"><![CDATA[	<td class="mobilrate {$bgcolor} forumdisplay_announcement" align="center">-</td>]]></template>
+		<template name="forumdisplay_subforums" version="1830"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="5" align="center"><strong>{$lang->sub_forums_in}</strong></td>
+</tr>
+<tr>
+<td class="tcat" width="2%">&nbsp;</td>
+<td class="tcat" width="59%"><span class="smalltext"><strong>{$lang->forumbit_forum}</strong></span></td>
+<td class="tcat" width="7%" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_threads}</strong></span></td>
+<td class="tcat" width="7%" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_posts}</strong></span></td>
+
+</tr>
+{$forums}
+</table>
+<br />]]></template>
+		<template name="forumdisplay_thread_rating" version="1821"><![CDATA[<td align="center" class="mobilrate {$bgcolor}{$thread_type_class}" id="rating_table_{$thread['tid']}" >
+		<ul class="star_rating{$not_rated}" id="rating_thread_{$thread['tid']}">
+			<li style="width: {$thread['width']}%" class="current_rating" id="current_rating_{$thread['tid']}">{$ratingvotesav}</li>
+		</ul>
+		<script type="text/javascript">
+		<!--
+			Rating.build_forumdisplay({$thread['tid']}, { width: '{$thread['width']}', extra_class: '{$not_rated}', current_average: '{$ratingvotesav}' });
+		// -->
+		</script>
+	</td>]]></template>
+		<template name="header" version="1830"><![CDATA[<div class="exeheader">
+	<span class="exereslogo">Site Adı</span>
+		<li><a href="index.php" class="active1" style="color:#fff;"><i class="fas fa-home exefamenu"></i>  <br><span>Home Page</span></a></li>
+		<li><a href="memberlist.php"  class="active1" > <i class="fas fa-users exefamenu"></i>   <br><span>Registred Users</span></a></li>
+		<li><a href="showteam.php" class="active1" ><i class="fas fa-user-md exefamenu"></i>  <br><span>Support Team</span></a></li>
+	<li><a href="help.php" class="active1" ><i class="fas fa-life-ring exefamenu"></i>  <br><span>Help & FAQ</span></a></li>
+	{$welcomeblock}
+</div>
+<div class="exeblock">
+	<a href="index.php">	<img src="https://i.imgur.com/GHAEW57.png">   </a>
+	
+	<!-- Logos :   NEGRU  https://i.imgur.com/VtIrrrF.png   |   ALB https://i.imgur.com/k0amopJ.png                      https://i.imgur.com/GHAEW57.png    https://i.imgur.com/J3tW5El.png                                         -->
+	
+	
+</div>
+<img src="https://i.hizliresim.com/MVGVB2.png" class="exereslogo2">
+<div id="container"  class="exeic">
+		<a name="top" id="top"></a>
+		<div id="content">
+			<center>
+				<navigation>
+					<div class="flexdisplay" style="display: flex;justify-content: space-between;">
+				<div class="exeduyuru" style="width: 49%;">
+					<div class="duyuruikon"><i class="fas fa-star"></i> IMPORTANT </div>
+					<a href="#">Announcement name  <b> searching example bold </b> text for test.</a>
+				</div>
+				<div class="exeduyuru" style="width: 49%;">
+					<div class="duyuruikon" style="float: right;border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;"><i class="fas fa-star"></i> IMPORTANT </div>
+					<a href="#">Announcement name  <b> searching example bold </b> text for test.</a>
+				</div>	</div>
+			</center>
+			<div class="wrapper">
+				{$pm_notice}
+				{$remote_avatar_notice}
+				{$bannedwarning}
+				{$bbclosedwarning}
+				{$modnotice}
+				{$pending_joinrequests}
+				{$awaitingusers}]]></template>
+		<template name="headerinclude" version="1830"><![CDATA[<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="{$lang->latest_threads} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.js?ver=1820"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.plugins.min.js?ver=1820"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/general.js?ver=1820"></script>
+
+{$stylesheets}
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/sidebar.js"></script>
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "{$lang->unknown_error}";
+
+	lang.select2_match = "{$lang->select2_match}";
+	lang.select2_matches = "{$lang->select2_matches}";
+	lang.select2_nomatches = "{$lang->select2_nomatches}";
+	lang.select2_inputtooshort_single = "{$lang->select2_inputtooshort_single}";
+	lang.select2_inputtooshort_plural = "{$lang->select2_inputtooshort_plural}";
+	lang.select2_inputtoolong_single = "{$lang->select2_inputtoolong_single}";
+	lang.select2_inputtoolong_plural = "{$lang->select2_inputtoolong_plural}";
+	lang.select2_selectiontoobig_single = "{$lang->select2_selectiontoobig_single}";
+	lang.select2_selectiontoobig_plural = "{$lang->select2_selectiontoobig_plural}";
+	lang.select2_loadmore = "{$lang->select2_loadmore}";
+	lang.select2_searching = "{$lang->select2_searching}";
+
+	var templates = {
+		modal: '{$jsTemplates['modal']}',
+		modal_button: '{$jsTemplates['modal_button']}'
+	};
+
+	var cookieDomain = "{$mybb->settings['cookiedomain']}";
+	var cookiePath = "{$mybb->settings['cookiepath']}";
+	var cookiePrefix = "{$mybb->settings['cookieprefix']}";
+	var cookieSecureFlag = "{$mybb->settings['cookiesecureflag']}";
+	var deleteevent_confirm = "{$lang->deleteevent_confirm}";
+	var removeattach_confirm = "{$lang->removeattach_confirm}";
+	var loading_text = '{$lang->ajax_loading}';
+	var saving_changes = '{$lang->saving_changes}';
+	var use_xmlhttprequest = "{$mybb->settings['use_xmlhttprequest']}";
+	var my_post_key = "{$mybb->post_code}";
+	var rootpath = "{$mybb->settings['bburl']}";
+	var imagepath = "{$theme['imgdir']}";
+  	var yes_confirm = "{$lang->yes}";
+	var no_confirm = "{$lang->no}";
+	var MyBBEditor = null;
+	var spinner_image = "{$theme['imgdir']}/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+jQuery.noConflict();
+jQuery(function($) {
+    $(".clickedbuttons").hide();
+    $(".buttons").click(function() {
+        $(".sidebar").animate({height: "hide", opacity: 0}, 500,
+            function() {
+                $(".forums").animate({width: "100%"}, 500);
+            });
+        $(this).hide();
+        $(".clickedbuttons").show();
+        $.cookie("sidebar","collapsed", {expires: 365});
+        return false;
+    });
+    $(".clickedbuttons").click(function() {
+        $(".forums").animate({width: "80%"}, 500,
+            function() {
+                $(".sidebar").animate({height: "show", opacity: 1}, 500);
+            });
+        $(this).hide();
+        $(".buttons").show();
+        $.cookie("sidebar","expanded", {expires: 365});
+        return false;
+    });
+    if($.cookie("sidebar") == "collapsed") {
+        $(".buttons").hide();
+        $(".clickedbuttons").show();
+        $(".forums").css("width","100%");
+        $(".sidebar").hide();
+    };
+});
+
+</script>
+
+
+
+<script type="text/javascript">
+
+
+
+
+/**
+ * Cookie plugin
+ *
+ * Copyright (c) 2006 Klaus Hartl (stilbuero.de)
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ */
+
+/**
+ * Create a cookie with the given name and value and other optional parameters.
+ *
+ * @example $.cookie('the_cookie', 'the_value');
+ * @desc Set the value of a cookie.
+ * @example $.cookie('the_cookie', 'the_value', { expires: 7, path: '/', domain: 'jquery.com', secure: true });
+ * @desc Create a cookie with all available options.
+ * @example $.cookie('the_cookie', 'the_value');
+ * @desc Create a session cookie.
+ * @example $.cookie('the_cookie', null);
+ * @desc Delete a cookie by passing null as value. Keep in mind that you have to use the same path and domain
+ *       used when the cookie was set.
+ *
+ * @param String name The name of the cookie.
+ * @param String value The value of the cookie.
+ * @param Object options An object literal containing key/value pairs to provide optional cookie attributes.
+ * @option Number|Date expires Either an integer specifying the expiration date from now on in days or a Date object.
+ *                             If a negative value is specified (e.g. a date in the past), the cookie will be deleted.
+ *                             If set to null or omitted, the cookie will be a session cookie and will not be retained
+ *                             when the the browser exits.
+ * @option String path The value of the path atribute of the cookie (default: path of page that created the cookie).
+ * @option String domain The value of the domain attribute of the cookie (default: domain of page that created the cookie).
+ * @option Boolean secure If true, the secure attribute of the cookie will be set and the cookie transmission will
+ *                        require a secure protocol (like HTTPS).
+ * @type undefined
+ *
+ * @name $.cookie
+ * @cat Plugins/Cookie
+ * @author Klaus Hartl/klaus.hartl@stilbuero.de
+ */
+
+/**
+ * Get the value of a cookie with the given name.
+ *
+ * @example $.cookie('the_cookie');
+ * @desc Get the value of a cookie.
+ *
+ * @param String name The name of the cookie.
+ * @return The value of the cookie.
+ * @type String
+ *
+ * @name $.cookie
+ * @cat Plugins/Cookie
+ * @author Klaus Hartl/klaus.hartl@stilbuero.de
+ */
+jQuery.cookie = function(name, value, options) {
+    if (typeof value != 'undefined') { // name and value given, set cookie
+        options = options || {};
+        if (value === null) {
+            value = '';
+            options = $.extend({}, options); // clone object since it's unexpected behavior if the expired property were changed
+            options.expires = -1;
+        }
+        var expires = '';
+        if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+            var date;
+            if (typeof options.expires == 'number') {
+                date = new Date();
+                date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+            } else {
+                date = options.expires;
+            }
+            expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE
+        }
+        // NOTE Needed to parenthesize options.path and options.domain
+        // in the following expressions, otherwise they evaluate to undefined
+        // in the packed version for some reason...
+        var path = options.path ? '; path=' + (options.path) : '';
+        var domain = options.domain ? '; domain=' + (options.domain) : '';
+        var secure = options.secure ? '; secure' : '';
+        document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+    } else { // only name given, get cookie
+        var cookieValue = null;
+        if (document.cookie && document.cookie != '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+};
+	
+	</script>]]></template>
+		<template name="header_welcomeblock_guest" version="1830"><![CDATA[<style>
+.kutu {
+    /* height: 30px; */
+    background-color: #ffffff33;
+    float: right;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    line-height: 30px;
+    /* min-width: 100px; */
+}
+</style>
+	<a href="{$mybb->settings['bburl']}/member.php?action=register" class="kutu" style="text-decoration:none;color:#fff;">REGISTER  <B>ACCOUNT</B></a>
+	<a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="kutu" style="text-decoration:none;color:#fff;">SIGN <b>IN</b>
+</a>
+	<!-- Continuation of div(class="upper") as opened in the header template -->
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="{$mybb->settings['bburl']}/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<input name="my_post_key" type="hidden" value="{$mybb->post_code}" />
+						<table width="100%" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>{$lang->login}</strong></td>
+							</tr>
+							{$loginform}
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>]]></template>
+		<template name="header_welcomeblock_member" version="1830"><![CDATA[<div class="flexright">
+                 	 <a href="{$mybb->settings['bburl']}/member.php?action=profile&uid={$mybb->user['uid']}">  
+						 <div class="footertips"><div class="faiconslog"> <i class="fas fa-user-circle"></i> </div>    <div class="footertipstext" style="text-transform: none !important;"> {$mybb->user['username']} </div>     </div> </a>
+	
+	
+	<a href="{$mybb->settings['bburl']}/private.php">
+    <div class="footertips"><div class="faiconsreg" style="height: 30px; width: 30px; line-height: 16px;">{$mybb->user['pms_unread']} </div>       <div class="footertipstext"> Messages </div>     </div></a>
+
+ 
+
+
+
+  
+ <a href="{$mybb->settings['bburl']}/member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}"> 
+	  <div class="footertips"><div class="faiconsreg" style="/* height: 38px; *//* width: 38px; */line-height: 18px;background: -webkit-linear-gradient(0deg, #cd3b3b 10%, #b52626, #b62727) !important;"> <i class="fas fa-sign-out-alt"></i> </div>       <div class="footertipstext"> {$lang->welcome_logout} </div>     </div></a>
+			
+ </div>
+
+
+
+
+<div class="moderationbuttons">
+<a href="{$mybb->settings['bburl']}/usercp.php" ><div class="footertips"><div class="faiconsreg"  style="background-image: -webkit-linear-gradient(145deg, #8c2de1 10%, #8f2fe4, #8f2fe4) !important;color: black;"> <i class="fa fa-cog" style="color: black;"></i> </div>    
+	<div class="footertipstext"> UCP </div>     </div></a>
+	
+	<br>
+{$modcplink}<br>
+{$admincplink}
+
+ </div>]]></template>
+		<template name="header_welcomeblock_member_admin" version="1830"><![CDATA[<a href="{$mybb->settings['bburl']}/{$admin_dir}/index.php" class="admincp"><div class="footertips"><div class="faiconsreg"  style="background-image: -webkit-linear-gradient(145deg, #d7be6f 10%, #c38a25, #fff7b1) !important;color: black;"> <i class="fa fa-cog" style="color: black;"></i> </div>    
+	<div class="footertipstext"> ACP </div>     </div></a>]]></template>
+		<template name="header_welcomeblock_member_moderator" version="1830"><![CDATA[<a href="{$mybb->settings['bburl']}/modcp.php" class="admincp"><div class="footertips"><div class="faiconsreg"  style="background-image: -webkit-linear-gradient(145deg, #7bd76f 10%, #4cc325, #349b09) !important;color: black;"> <i class="fas fa-cube" style="color: black;"></i> </div>    
+	<div class="footertipstext"> MCP </div>     </div></a>]]></template>
+		<template name="index" version="1830"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']}</title>
+{$headerinclude}
+{$overview3_headerinclude}
+<script type="text/javascript">
+<!--
+	lang.no_new_posts = "{$lang->no_new_posts}";
+	lang.click_mark_read = "{$lang->click_mark_read}";
+// -->
+</script>
+</head>
+<body{$overview3_body_onload}>
+{$header}
+{$ps_header_index}
+	
+	
+
+
+	
+	
+	
+	
+	<style type="text/css">
+.buttons {
+    background: url(https://code.playtv.ro/images/collapse.png) no-repeat;
+height: 25px; width: 36px;
+    display: block;
+    cursor: pointer;
+}
+
+.clickedbuttons {
+    background: url(https://code.playtv.ro/images/collapse_collapsed.png) no-repeat;
+   height: 25px; width: 36px;
+    display: block;
+    cursor: pointer;
+}
+</style>
+
+	
+	<div class="sidebarucp">
+
+<a href="{$mybb->settings['bburl']}/{$admin_dir}/index.php" class="admincp"><div class="footertips"> 
+	<div class="faiconsreg"  style="background-image: -webkit-linear-gradient(304deg, #2576df 10%, #1264cf, #07479b) !important;color: white !important;font-weight: 100;"> <i class="fab fa-facebook-square"></i> </div>    
+	    </div></a>
+		
+		<br>
+		
+
+<a href="{$mybb->settings['bburl']}/{$admin_dir}/index.php" class="admincp"><div class="footertips"> 
+	<div class="faiconsreg"  style="background-image: -webkit-linear-gradient(304deg, #5fa1f5 10%, #4d8fe5, #2c6dc3) !important;color: white !important;font-weight: 100;"> <i class="fab fa-twitter-square"></i> </div>    
+	    </div></a>
+		
+		
+		<br>
+		
+
+<a href="{$mybb->settings['bburl']}/{$admin_dir}/index.php" class="admincp"><div class="footertips"> 
+	<div class="faiconsreg"  style="background-image: -webkit-linear-gradient(304deg, #4c68d7 10%, #cd486b,#fccc63, #8a3ab9) !important;color: white !important;font-weight: 100;"> <i class="fab fa-instagram"></i> </div>    
+	    </div></a>
+		
+		
+		<br>
+		
+
+<a href="{$mybb->settings['bburl']}/{$admin_dir}/index.php" class="admincp"><div class="footertips"> 
+	<div class="faiconsreg"  style="background-image: -webkit-linear-gradient(304deg, #df2525 10%, #cf1212, #9b0707) !important;color: white !important;font-weight: 100;"> <i class="fab fa-youtube-square"></i> </div>    
+	    </div></a>
+		
+
+ </div>
+	
+	
+	<div class="buttonssidebarhide" style="float: right; position: relative; right: 2px; top: -78px;height: 31px; width: 41px;background: #3498db;padding: 5px 0px;border-radius: 4px;">
+	
+	<a class="buttons" style="float: right;"></a>
+		<a class="clickedbuttons" style="float: right;"></a> </div>
+<br class="clear" />
+	
+	
+	
+	
+<div class="sidebar" style="width: 19%;margin-left: 10px;float: right;">	
+	
+	<div class="sideblock"> 
+		
+		<table style="width: 100%;border-radius: 10px;"> <tr>	<td class="thead" colspan="5" style="line-height: 26px;"> TEAM ONLINE </td> </tr> 
+			<tr>	<td class="trow1" colspan="5" style="width: 100%;border-radius: 5px;">
+				<div class="left" style="float: left;"> daNN1eL </div> <div class="right smalltext sidebargrouptext" style="float: right;background: linear-gradient(90deg, #4a3e3e 0%, #b70000 100%);"> ADMINISTRATOR </div></td> </tr>
+			
+			
+			<tr>	<td class="trow1" colspan="5" style="width: 100%;border-radius: 5px;">
+				<div class="left" style="float: left;"> CodeSq- </div> <div class="right smalltext sidebargrouptext" style="float: right;background: linear-gradient(90deg, #4a3e3e 0%, #1b6cd6 100%);"> MODERATOR </div></td> </tr>
+			
+			
+			<tr>	<td class="trow1" colspan="5" style="width: 100%;border-radius: 5px;">
+				<div class="left" style="float: left;"> Insight </div> <div class="right smalltext sidebargrouptext" style="float: right;background: linear-gradient(90deg, #4a3e3e 0%, #1db52b 100%);"> GLOBAL MODERATOR </div></td> </tr>
+		
+
+		
+		</table>  	</div>
+	
+	
+	
+	<br>
+	
+	
+	
+	
+		<div class="sideblock" style="background: linear-gradient(90deg, #d19b24 0%, #e68130 100%);"> 
+		
+		<table style="width: 100%;border-radius: 10px;" > <tr>	<td class="thead" colspan="5" style="line-height: 26px;background: linear-gradient(90deg, #d19c24 0%, #e78031 100%);"> TOP POSTERS </td> </tr> 
+		<tr>	<td class="trow1" colspan="5" style="width: 100%;border-radius: 5px;padding: 7px;line-height: 16px;">
+				<div class="left" style="float: left;"> daNN1eL </div> <div class="right smalltext" style="float: right;" > 154 POSTS </div>		</td> </tr>
+			
+			
+	<tr>	<td class="trow1" colspan="5" style="width: 100%;border-radius: 5px;padding: 7px;line-height: 16px;">
+					<div class="left" style="float: left;"> Insight </div> <div class="right smalltext" style="float: right;" > 82 POSTS </div>		</td> </tr>
+		
+				<tr>	<td class="trow1" colspan="5" style="width: 100%;border-radius: 5px;padding: 7px;line-height: 16px;">
+		<div class="left" style="float: left;"> uNNamed </div> <div class="right smalltext" style="float: right;" > 36 POSTS </div>		</td> </tr>
+			
+		
+				<tr>	<td class="trow1" colspan="5" style="width: 100%;border-radius: 5px;padding: 7px;line-height: 16px;">
+		<div class="left" style="float: left;"> miqueL </div> <div class="right smalltext" style="float: right;" > 18 POSTS </div>		</td> </tr>
+			
+		
+				<tr>	<td class="trow1" colspan="5" style="width: 100%;border-radius: 5px;padding: 7px;line-height: 16px;">
+		<div class="left" style="float: left;"> Dongo </div> <div class="right smalltext" style="float: right;" > 12 POSTS </div>		</td> </tr>
+			
+	
+		
+
+		
+		</table>  	</div>
+	
+	
+	
+	
+	
+	
+		
+	<br>
+	
+	
+	
+	
+	<div class="sideblock" style="background: linear-gradient(90deg, #77d124 0%, #058f2b 100%);"> 
+		
+		<table style="width: 100%;border-radius: 10px;" > <tr>	<td class="thead" colspan="5"style="line-height: 26px;background: linear-gradient(90deg, #77d124 0%, #058f2b 100%);"> LATEST THREADS </td> </tr> 
+		<tr>	<td class="trow1" colspan="5" style="width: 100%;border-radius: 5px;padding: 7px;line-height: 16px;">
+				<div class="left" style="float: left;text-align: start;"> Long Title description po...  <br><b class="smalltext">25 May 2022 </b></div> <div class="right smalltext" style="float: right;" > 152 VIEWS <br><b class="smalltext">by daNN1eL </b> </div>		</td> </tr>
+			
+			
+	<tr>	<td class="trow1" colspan="5" style="width: 100%;border-radius: 5px;padding: 7px;line-height: 16px;">
+	<div class="left" style="float: left;text-align: start;"> Closed Thread <br><b class="smalltext">24 May 2022 </b></div> <div class="right smalltext" style="float: right;" > 52 VIEWS   <br><b class="smalltext">by daNN1eL  </b></div>		</td> </tr>
+		
+				<tr>	<td class="trow1" colspan="5" style="width: 100%;border-radius: 5px;padding: 7px;line-height: 16px;">
+		<div class="left" style="float: left;text-align: start;"> Third Thread <br><b class="smalltext">22 May 2022 </b> </div> <div class="right smalltext" style="float: right;" > 75 VIEWS   <br><b class="smalltext">by CodeSq-  </b></div>		</td> </tr>
+			
+	
+		
+
+		
+		</table>  	</div>
+	
+	
+	
+</div>
+	<div class="forums" style="width: 80%;float: left;">	
+{$forums}
+	</div>
+	
+{$ps_footer_index}
+{$overview3}
+{$boardstats}
+<br class="clear" />
+{$footer}
+{$overview3_body}
+</body>
+</html>]]></template>
+		<template name="nav" version="1830"><![CDATA[<div class="exeduyuru2">
+<div class="duyuruikon2"><i class="fas fa-align-justify"></i>  NAVIGATION </div>
+{$nav}{$activesep}{$activebit}
+</div>]]></template>
+		<template name="nav_bit" version="1820"><![CDATA[<a href="{$navbit['url']}"><i class="fas fa-arrow-right"></i> {$navbit['name']}</a>]]></template>
+		<template name="nav_bit_active" version="1820"><![CDATA[<a class="active"><i class="fas fa-check-circle"></i> {$navbit['name']}</a>]]></template>
+		<template name="nav_sep" version="1820"><![CDATA[>]]></template>
+		<template name="nav_sep_active" version="1820"><![CDATA[]]></template>
+		<template name="portal" version="1830"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']}</title>
+<link rel="alternate" type="application/rss+xml" title="{$lang->latest_announcements} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php?portal=1" />
+<link rel="alternate" type="application/atom+xml" title="{$lang->latest_announcements} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?portal=1&type=atom1.0" />
+{$headerinclude}
+</head>
+<body>
+{$header}
+{$ps_header_portal}
+<table width="100%" cellspacing="0" cellpadding="{$theme['tablespace']}" border="0" align="center">
+<tr><td valign="top" width="200">
+{$welcome}
+{$pms}
+{$search}
+{$stats}
+{$whosonline}
+{$latestthreads}
+</td>
+<td>&nbsp;</td>
+<td valign="top">
+{$announcements}
+{$multipage}
+</td>
+</tr>
+</table>
+{$ps_footer_portal}
+{$footer}
+</body>
+</html>]]></template>
+		<template name="postbit" version="1830"><![CDATA[{$ignore_bit}{$deleted_bit}
+<a name="pid{$post['pid']}" id="pid{$post['pid']}"></a>
+<div class="post classic {$unapproved_shade}" style="{$post_visibility}" id="post_{$post['pid']}">
+<div class="post_author scaleimages">
+	<div class="exereklam" style="padding:5px;display:none;">
+		<div class="icerik" style="padding:5px;display:none;">You can add ads here!</div>
+	</div>
+	<div class="exepostbit"></div>
+	<div class="exepostbit_cizgi"></div>
+	{$post['useravatar']}
+	<center><div style="color: green;box-shadow: 2px 4px 0px 0px rgb(151 151 151 / 35%);background: #e2e8f0;width: 100%;font-size: 18px;margin-top: 12px;border-radius: 45px;">{$post['profilelink']}</div>
+		<br><div class="exeinfo"><div class="exeinfo_kutu"></div>{$post['usertitle']}<div class="exeinfo_sagucgen"></div></div></center>
+	<div class="author_information">
+			<br />
+			<span class="smalltext">
+				{$post['groupimage']}<div class="res">{$post['onlinestatus']}</div>
+			</span>
+	</div>
+	<div class="exeinfo2"><div class="icerik" style="padding:5px;color:#fff;">150<br><i class="fas fa-thumbs-up"></i></div>
+	</div>	
+	<div class="exeinfo2"><div class="icerik" style="padding:5px;color:#fff;">75<br><i class="fas fa-heart"></i></div>
+	</div>
+		{$post['user_details']}
+</div>
+<div class="post_content">
+	<div class="post_head">
+		{$post['posturl']}
+		{$post['icon']}
+		<span class="post_date">{$post['postdate']} <span class="post_edit" id="edited_by_{$post['pid']}">{$post['editedmsg']}</span></span>
+	{$post['subject_extra']}
+	</div>
+	<div class="post_body scaleimages" id="pid_{$post['pid']}">
+		{$post['message']}
+	</div>
+	{$post['attachments']}
+	{$post['signature']}
+	<div class="post_meta" id="post_meta_{$post['pid']}">
+		{$post['iplogged']}
+		<div class="float_right">
+			{$post['poststatus']}
+		</div>
+	</div>
+	{$post['input_editreason']}
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		{$post['button_email']}{$post['button_pm']}{$post['button_www']}{$post['button_find']}{$post['button_rep']}
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		{$post['button_edit']}{$post['button_quickdelete']}{$post['button_quickrestore']}{$post['button_quote']}{$post['button_multiquote']}{$post['button_report']}{$post['button_warn']}{$post['button_purgespammer']}{$post['button_reply_pm']}{$post['button_replyall_pm']}{$post['button_forward_pm']}{$post['button_delete_pm']}
+	</div>
+</div>
+</div>]]></template>
+		<template name="postbit_author_user" version="1820"><![CDATA[<br><br><div class="exepostbitkutu"><div class="icerik" style="padding:5px;color:#fff;">{$lang->postbit_threads} {$post['threadnum']}</div></div><br>
+<div class="exepostbitkutu"><div class="icerik" style="padding:5px;color:#fff;">{$lang->postbit_posts} {$post['postnum']}</div></div><br><br>
+<div class="exepostbitkutu"><div class="icerik" style="padding:5px;color:#fff;">{$lang->postbit_joined} {$post['userregdate']}</div></div><br><br>
+<div class="exepostbitkutu"><div class="icerik" style="padding:5px;color:#fff;">{$post['warninglevel']}</div></div>]]></template>
+		<template name="postbit_avatar" version="1830"><![CDATA[<center><div class="exeavatar" style="width: 90%;position:relative;margin-left: -6px;float:none;padding: 7px;background: #e2e8f0;border-radius: 5px;box-shadow: 6px 7px 0px 0px rgb(151 151 151 / 35%);">
+	<a href="{$post['profilelink_plain']}"><img src="{$useravatar['image']}" alt="" style="border: 2px solid #3498db;border-radius: 100px;width: 150px;height: 150px;"/></a>
+	</div></center>]]></template>
+		<template name="postbit_warninglevel" version="1820"><![CDATA[{$lang->postbit_warning_level} <a href="{$warning_link}">{$warning_level}</a>]]></template>
+	</templates>
+</theme>

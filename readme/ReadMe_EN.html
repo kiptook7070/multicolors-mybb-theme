@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>README & INFO - PREMIUM THEMES AND THEMPLATES</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <style>
+        @import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');
+        body {
+            background:#f3f4f8 url(./img/header.png) no-repeat center top;
+            margin:0;
+            font-family:'Muli', sans-serif;
+            color:#fff;
+        }
+        .content {
+            max-width:1510px;
+            margin:0 auto;
+        }
+        a.logo {
+            display:block;
+            text-align:center;
+            margin: 60px 0 40px;
+            width: 132px;
+            transition-duration: 0.6s;
+        }
+        a.logo:hover {
+            opacity:0.7;
+            transition-duration: 0.6s;
+        }
+        strong {
+            font-weight:700;
+            color: #191f5d;
+        }
+        h1 {
+            color: #191f5d;
+            text-shadow: 0 0 10px rgba(243, 244, 248, 0.45);
+            font-weight: 900;
+            font-size: 49px;
+            margin: 20px 0 0;
+        }
+        h2 {
+            margin: 20px 0 50px;
+            color: #949eb6;
+            font-weight: lighter;
+            font-size: 21px;
+        }
+        h2 .cat {
+            font-size:11px;
+            font-weight:bold;
+            text-transform:uppercase;
+            padding:7px 10px;
+            border-radius:3px;
+            vertical-align: middle;
+            line-height: 2px;
+        }
+        .mybb {
+            background: #d9f1dd;
+            color: #42b953;
+        }
+        .ips {
+            background-color:#01a8ff;
+        }
+        .wp {
+            background-color:#e76423;
+        }
+        h3 {
+            padding-top:25px;
+            color: #191f5d;
+            font-size: 20px;
+            font-weight: normal;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        h9 {
+            font-size: 10px;
+        }
+        .info{
+            -webkit-box-flex: 0;
+            padding: 24px 20px;
+            background: #fff;
+            color: #949eb6;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 1px 9.5px 0.5px rgba(0, 0, 0, 0.03);
+            box-shadow: 0px 1px 9.5px 0.5px rgba(0, 0, 0, 0.03);
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+        .info:before {
+            content:"\f071";
+            font-family:'Font Awesome\ 5 Free';
+            margin-right:15px;
+            font-weight:900;
+        }
+        span.text{
+            font-size:14px;
+            color:#fff;
+            float:right;
+            padding:23px 33px 23px 33px;
+            display:inline-block;
+        }
+        a.btn{
+            border-radius: 5px;
+            background:#ff3149;
+            background:-moz-linear-gradient(left, #ff3149 0%, #dc2436 100%);
+            background:-webkit-linear-gradient(left, #ff3149 0%,#dc2436 100%);
+            background:linear-gradient(to right, #ff3149 0%,#dc2436 100%);
+            box-shadow:0px 10px 30px 0px rgba(255, 49, 83, 0.15);
+            padding:23px 33px 23px 33px;
+            font-size:12px;
+            font-weight:700;
+            display:inline-block;
+            float:right;
+            color:#fff;
+            text-transform:uppercase;
+            text-decoration:none;
+            transition-duration:0.3s;
+        }
+        a.btn:hover {
+            background:#ff3149;
+            background:-moz-linear-gradient(left, #ff3149 0%, #dc2436 100%);
+            background:-webkit-linear-gradient(left, #ff3149 0%,#dc2436 100%);
+            background:linear-gradient(to right, #ff3149 0%,#dc2436 100%);
+            box-shadow:0px 10px 30px 0px rgba(255, 49, 83, 0.15);
+            opacity:0.6;
+            transition-duration:0.6s;          
+        }
+        #boxInfo {
+            display:table;
+            width:100%;
+            margin:50px 0 0 0;
+            font-weight: lighter;
+            color: #191f5d;
+            font-size: 14.5px;
+            margin: 21px 0 0 0;
+            line-height: 20px;
+        }
+        #boxInfo .browser {
+            width:737px;
+            height:500px;
+            float:left;
+            margin-top:70px;
+        }
+        #boxInfo .browser .top_browser {
+            background:url(./img/browser.png) no-repeat;
+            background-size:100% 100%;
+            height:70px;
+            width:100%;
+            display:block;
+            border-radius: 20px 20px 0 0;
+            -webkit-box-shadow: 0px 1px 9.5px 0.5px rgba(0, 0, 0, 0.01);
+            box-shadow: 0px 1px 9.5px 0.5px rgba(0, 0, 0, 0.01);
+        }
+        #boxInfo .browser .site_img {
+            width:100%;
+            display:block;
+            border-radius: 0 0 20px 20px;
+            -webkit-box-shadow: 0px 1px 9.5px 0.5px rgba(0, 0, 0, 0.01);
+            box-shadow: 0px 1px 9.5px 0.5px rgba(0, 0, 0, 0.01);
+        }
+        #boxInfo .desc {
+            width:calc(100% - 800px);
+            float:right;
+            display:block;
+            line-height:28px;
+            padding-top:100px;
+        }
+        #footer {
+            background-color:#1f223e;
+            width:100%;
+            height:108px;
+            display:block;
+            margin-top:100px;
+        }
+        #footer .copyrights {
+            color:#666376;
+            font-weight:300;
+            font-size:13px;
+            text-align:center;
+            line-height:108px;
+            display:block;
+        }
+        #footer .copyrights a {
+            color:#666376;
+            text-decoration:none;
+        }
+        </style>
+</head>
+<body>
+    <div class="content">
+     
+        <h1>How to install this theme</h1>
+        <h2>
+            <span class="cat mybb">MYBB</span> 
+             Premium Multicolored v1.02
+        </h2>
+        <span class="info">Upload all files from <strong>upload</strong> folder to your FTP. Overwrite all files if some exists.</span> 
+        <!-- BUTTONY DO POBRANIA
+        <a href="#" class="btn">Test</a><span class="text">test</span> 
+        -->
+        <div id='boxInfo'>
+            <h3>1. Go to your main MyBB folder in FTP.</h3>
+            <p> Upload there all files from 'upload' folder.</p> 
+            <strong> If some files already exists - overwrite it!</strong>
+        </div>
+        <div id='boxInfo'>
+            <div class='browser'>
+                <div class='top_browser'></div>
+                <img class='site_img' src="./img/ss1.png">
+            </div>
+            <div class='desc'>
+                <h3>2. Go to ACP and follow these steps</h3>
+                        - Select TEMPLATE & STYLES <strong>TAB </strong></br />
+                        - Click on in button <strong>Import a Theme </strong>  <br />
+                        - Select <strong>THEME NAME .XML </strong> from theme folder<br />
+                        - Select check button <strong>IGNORE VERSION COMPATIBILITY</strong><br />
+                        - Click <strong> IMPORT THEME BUTTON </strong> to save and finish uploading process<br /><br />
+
+                        <strong>*</strong> - Select Theme as DEFAULT to apply changes.<br />
+                        <h9> This theme support all usual plugins from mybb.</h9></p>
+                    </p>
+            </div>
+        </div>
+<div id='boxInfo'>
+            <div class='browser'>
+                <div class='top_browser'></div>
+                <img class='site_img' src="./img/demogif.png">
+            </div>
+            <div class='desc'>
+                    <h3> 3. Go to index page to see the changes.</h3>
+                    <p> - Refresh page and enjoy!<br /> 
+                    </p>
+«--- If you like and respect our work, please keep this files only for you and don't share it. If our team find this theme as shared on other websites your acces will be restricted ---»
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="copyrights">
+            All rights reserved © 2022 <a href="#" target="_blank"> PREMIUM THEMES </a>
+        </div>
+    </div>
+</body>
+</html>
